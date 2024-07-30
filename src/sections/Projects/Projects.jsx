@@ -11,10 +11,6 @@ function Projects() {
         <Project img={viberr} name="App 1" description="blah blah blah blah blah "/>
         <Project img={viberr} name="App 1" description="blah blah blah blah blah "/>
         </div>
-        
-        
-        
-        
     </section>
   )
 }

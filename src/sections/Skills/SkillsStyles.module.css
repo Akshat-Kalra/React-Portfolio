@@ -1,64 +1,62 @@
 .container {
     text-align: center;
-    padding: 20px; /* Add padding around the container */
+    padding: 40px; /* Increased padding for better spacing */
+    background-color: var(--background-color);
+    border-radius: 10px; /* Rounded corners for smoother look */
 }
 
 .technologyContainer {
     display: flex;
-    flex-direction: column; /* Default to column layout */
+    flex-direction: column;
+    gap: 40px; /* Space between different skill categories */
 }
+
 
 .skillContainer {
     display: flex;
     flex-direction: row; /* Default to row layout for larger screens */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     justify-content: center; /* Center items horizontally */
-    gap: 10px; /* Space between items */
+    gap: 20px; /* Increased space between items */
     border-radius: 20px;
     border: 2px solid #ccc;
-    background-color: #f9f9f9;
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-    width: 50%; /* Adjust width to fit smaller screens */
-    max-width: 800px; /* Reduce max width */
-    height: 200px; /* Larger height to ensure vertical space */
+    background-color: #fff; /* White background for skill container */
+    margin: 20px auto; /* Center the container with margin */
+    padding: 30px; /* Increased padding */
+    width: 90%; /* Adjust width to fit smaller screens */
+    max-width: 1200px; /* Increased max width for larger screens */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
 }
 
-.parentSkills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Ensure skill cards are small enough to fit the image and text */
 .skillCard {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
-    width: auto; /* Fit to content width */
-    height: auto; /* Fit to content height */
-    padding: 5px; /* Padding inside the card */
-    border-radius: 10px; /* Smaller border radius */
+    width: 100px; /* Set a fixed width for uniformity */
+    height: 120px; /* Set a fixed height for uniformity */
+    padding: 15px; /* Padding inside the card */
+    border-radius: 10px; /* Border radius for smoother look */
+    background-color: #fafafa; /* Light background for contrast */
     transition: transform 0.3s, box-shadow 0.3s;
     box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .skillCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .skillIconContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e0e0e0; /* Light background for better contrast */
     border-radius: 50%; /* Circular background */
-    padding: 5px; /* Adjust padding to fit the image */
-    margin-bottom: 6px; /* Space between icon and text */
-    display: inline-flex; /* Ensure the container only takes as much space as needed */
+    padding: 10px; /* Adjust padding to fit the image */
+    margin-bottom: 10px; /* Space between icon and text */
+    width: 60px; /* Fixed width for icon container */
+    height: 60px; /* Fixed height for icon container */
 }
 
 .skillIcon {
@@ -66,14 +64,16 @@
     height: 40px; /* Set height to match width */
 }
 
-h3 {
-    margin-bottom: 20px; /* Space below the title */
+h1 {
+    margin-bottom: 30px; /* Space below the title */
+    font-size: 2.5rem; /* Larger font size for the main title */
+    color: #333; /* Darker color for better readability */
 }
 
-@media (min-width: 1200px) {
-    .technologyContainer {
-        margin-left: 0;
-        flex-direction: row; /* Change to row layout for larger screens */
-        gap: 20px; /* Increase space between items for larger screens */
-    }
+h3 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 1.5rem; /* Adjusted font size */
+    color: #666; /* Lighter color for subheading */
+    text-align: left; /* Align titles to the left */
+    margin-left: 5%; /* Add left margin for alignment */
 }

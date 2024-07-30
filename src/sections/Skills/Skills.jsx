@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import styles from './SkillsStyles.module.css'
 import reactIcon from '../../assets/reactIcon.svg'
 import HTMLIcon from '../../assets/HTMLIcon.svg'
@@ -39,7 +39,8 @@ const frontendSkills = [
     { name: 'Javascript', svg: jsIcon},
     { name: 'Python', svg: pythonIcon},
     { name: 'Git', svg: gitIcon},
-    { name: 'GitHub', svg: gitHubIcon}
+    { name: 'GitHub', svg: gitHubIcon},
+    
   ];
 
 function Skills() {
@@ -58,22 +59,20 @@ function Skills() {
 
 function SkillList({ title, skills }) {
     return (
-    <>
-    <div className={styles.parentSkills}>
-    <h3>Hello</h3>
-    <div className={styles.skillContainer}>
-    {skills.map((skill, index) => (
-          <div key={index} className={styles.skillCard}>
-            <img src={skill.svg} alt={`${skill.name} icon`} className={styles.skillIcon} />
-            <span>{skill.name}</span>
-          </div>
-        ))}
-    </div>        
-    </div>
-
-    </>
-
-    )
+      <div className={styles.parentSkills}>
+        <h3 className={styles.skillTitle}>{title}</h3>
+        <div className={styles.skillContainer}>
+          {skills.map((skill, index) => (
+            <div key={index} className={styles.skillCard}>
+              <div className={styles.skillIconContainer}>
+                <img src={skill.svg} alt={`${skill.name} icon`} className={styles.skillIcon} />
+              </div>
+              <span>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
 }
 
 export default Skills
