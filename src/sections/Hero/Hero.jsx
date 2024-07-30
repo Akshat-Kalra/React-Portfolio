@@ -27,7 +27,9 @@ function Hero() {
 
       <div className={styles.info}>
         <h1>Akshat <br /> Kalra</h1>
-        <h2>Developer</h2>
+        <h2>I am a second year Statistics student at The University of British Columbia</h2>
+        <h3>{'Web Dev, Data Science, Stats and more...'}</h3>
+        <h4>Helpful Links:</h4>
         <span>
             <a href="https://twitter.com" target="_blank">
                 <img src={twitterIcon} alt="Twitter Icon" />
@@ -39,9 +41,6 @@ function Hero() {
                 <img src={linkedInIcon} alt="Twitter Icon" />
             </a>
         </span>
-        <p className={styles.description}>
-            Blah Blah Blah
-        </p>
         <a href={CV} download>
             <button className='hover'>Resume</button>
         </a>

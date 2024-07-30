@@ -31,13 +31,13 @@ body {
   gap: 60px;
 }
 
-h1,h2,h3,p {
+h1,h2,h3,p,h4 {
   color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
-h2, h3, p {
+h2, h3, p, h4 {
   font-family: 'Roboto Mono', monospace;
 }
 
