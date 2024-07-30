@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+}
+
+.skillContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    border-radius: 20px;
+    height: 100px;
+
+    img {
+        width: 30px;
+    }
+}

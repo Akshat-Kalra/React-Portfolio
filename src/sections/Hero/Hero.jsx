@@ -39,7 +39,7 @@ function Hero() {
                 <img src={linkedInIcon} alt="Twitter Icon" />
             </a>
         </span>
-        <p>
+        <p className={styles.description}>
             Blah Blah Blah
         </p>
         <a href={CV} download>
