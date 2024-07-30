@@ -13,12 +13,24 @@ import gitHubIcon from '../../assets/github-light.svg'
 const frontendSkills = [
     { name: 'ReactJS', svg: reactIcon},
     { name: 'HTML', svg: HTMLIcon},
-    { name: 'CSS', svg: cssIcon}
+    { name: 'CSS', svg: cssIcon},
+    { name: 'C++', svg: cppIcon},
+    { name: 'Java', svg: javaIcon},
+    { name: 'Javascript', svg: jsIcon},
+    { name: 'Python', svg: pythonIcon},
+    { name: 'Git', svg: gitIcon},
+    { name: 'GitHub', svg: gitHubIcon}
   ];
   
   const backendSkills = [
     { name: 'Node.js', svg: reactIcon},
-    { name: 'Express.js', svg: HTMLIcon}
+    { name: 'Express.js', svg: HTMLIcon},
+    { name: 'C++', svg: cppIcon},
+    { name: 'Java', svg: javaIcon},
+    { name: 'Javascript', svg: jsIcon},
+    { name: 'Python', svg: pythonIcon},
+    { name: 'Git', svg: gitIcon},
+    { name: 'GitHub', svg: gitHubIcon}
   ];
   
   const languageSkills = [
@@ -36,7 +48,7 @@ function Skills() {
       <h1>Skills</h1>
       <div className={styles.technologyContainer}>
         <SkillList title="Frontend" skills={frontendSkills} />
-        <SkillList title="Backend" skills={frontendSkills} />
+        <SkillList title="Backend" skills={backendSkills} />
         <SkillList title="Languages & Additional" skills={languageSkills} />
       </div>
       
@@ -47,7 +59,8 @@ function Skills() {
 function SkillList({ title, skills }) {
     return (
     <>
-    <h3>{title}</h3>
+    <div className={styles.parentSkills}>
+    <h3>Hello</h3>
     <div className={styles.skillContainer}>
     {skills.map((skill, index) => (
           <div key={index} className={styles.skillCard}>
@@ -55,7 +68,9 @@ function SkillList({ title, skills }) {
             <span>{skill.name}</span>
           </div>
         ))}
+    </div>        
     </div>
+
     </>
 
     )

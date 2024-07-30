@@ -1,43 +1,79 @@
 .container {
     text-align: center;
+    padding: 20px; /* Add padding around the container */
+}
+
+.technologyContainer {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
 }
 
 .skillContainer {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; 
-    margin: 0 auto; 
-    padding: 20px; 
+    flex-direction: row; /* Default to row layout for larger screens */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
     border-radius: 20px;
-    border: 2px solid #ccc; 
-    width: 80%; 
-    max-width: 1200px;
+    border: 2px solid #ccc;
     background-color: #f9f9f9;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    width: 50%; /* Adjust width to fit smaller screens */
+    max-width: 800px; /* Reduce max width */
+    height: 200px; /* Larger height to ensure vertical space */
 }
 
+.parentSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+/* Ensure skill cards are small enough to fit the image and text */
 .skillCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #fff; /* Card background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effect */
+    justify-content: center; /* Center content vertically */
+    width: auto; /* Fit to content width */
+    height: auto; /* Fit to content height */
+    padding: 5px; /* Padding inside the card */
+    border-radius: 10px; /* Smaller border radius */
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
 }
 
 .skillCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.skillIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0; /* Light background for better contrast */
+    border-radius: 50%; /* Circular background */
+    padding: 5px; /* Adjust padding to fit the image */
+    margin-bottom: 6px; /* Space between icon and text */
+    display: inline-flex; /* Ensure the container only takes as much space as needed */
 }
 
 .skillIcon {
-    width: 30px;
-    margin-bottom: 8px;
+    width: 40px; /* Smaller icon size */
+    height: 40px; /* Set height to match width */
 }
 
 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+@media (min-width: 1200px) {
+    .technologyContainer {
+        margin-left: 0;
+        flex-direction: row; /* Change to row layout for larger screens */
+        gap: 20px; /* Increase space between items for larger screens */
+    }
 }
