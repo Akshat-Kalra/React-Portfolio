@@ -34,3 +34,10 @@
         transform: scale(1.05);
     }
 }
+
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
