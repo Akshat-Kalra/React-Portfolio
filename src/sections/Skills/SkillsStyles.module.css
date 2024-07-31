@@ -20,7 +20,7 @@
     gap: 20px; /* Increased space between items */
     border-radius: 20px;
     border: 2px solid #ccc;
-    background-color: #fff; /* White background for skill container */
+    background-color: var(--background-color); /* White background for skill container */
     margin: 20px auto; /* Center the container with margin */
     padding: 30px; /* Increased padding */
     width: 90%; /* Adjust width to fit smaller screens */
