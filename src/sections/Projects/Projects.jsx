@@ -1,17 +1,8 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
 import styles from './ProjectsStyles.module.css'
 import titanic from '../../assets/titanic.png'
 import cat from '../../assets/cat.png'
-import dumbell from '../../assets/dumbell.png'
-import reactIcon from '../../assets/reactIcon.svg'
-import HTMLIcon from '../../assets/HTMLIcon.svg'
-import cssIcon from '../../assets/cssIcon.svg'
-import jsIcon from '../../assets/jsIcon.svg'
-import javaIcon from '../../assets/javaIcon.svg'
-import pythonIcon from '../../assets/pythonIcon.svg'
-import cppIcon from '../../assets/cppIcon.svg'
-import gitIcon from '../../assets/git-icon.svg'
-import gitHubIcon from '../../assets/github-light.svg'
 import website from '../../assets/website.png'
 import fitLift from '../../assets/fitlift.png'
 
@@ -30,17 +21,18 @@ function Projects() {
 }
 
 function Project(props) {
-    const img = props.img
+    const img = props.img;
     const name = props.name
     const description = props.description
     const link = props.link
+    const skills = props.skills
     return (
         <div className={styles.projectCardParent}>
             <a href={link} target='_blank' className={styles.projectCard}>
             <img src={img} />
             <h3>{name}</h3>
             <p>{description}</p>
-            <p>{props.skills}</p>
+            <p>{skills}</p>
         </a>
         </div>
         
