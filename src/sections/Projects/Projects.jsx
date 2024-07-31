@@ -12,6 +12,7 @@ import pythonIcon from '../../assets/pythonIcon.svg'
 import cppIcon from '../../assets/cppIcon.svg'
 import gitIcon from '../../assets/git-icon.svg'
 import gitHubIcon from '../../assets/github-light.svg'
+import website from '../../assets/website.png'
 
 function Projects() {
   return (
@@ -19,6 +20,7 @@ function Projects() {
         <h1 className='sectionTitle'>PROJECTS</h1>
         <div className={styles.projectsContainer}>
         <Project img={dumbell} name="FitTrackr" description='Java-based fitness tracking app. Logs workouts, visualizes progress, and persists data.' link="https://github.com/Akshat-Kalra/FitTrackr" skills={<strong>Java | Swing (GUI) | JUnit5</strong>}/>
+        <Project img={website} name="This Website :)" description="ReactJS-powered portfolio website showcasing projects and skills. Utilizing react features such as hooks, state management, reusable components. " link="https://akshatkalra.com" skills={<strong>ReactJS | Javascript | HTML | CSS </strong>} />
         <Project img={cat} name="Only Cat Facts" description="ReactJS-powered cat facts app. Fetches data from APIs, displays cute cat content." link="https://onlycatfacts.netlify.app/" skills={<strong>ReactJS | HTML | CSS | API Integration</strong>}/>
         <Project img={titanic} name="Inferential Analysis" description="Statistical Inference on whether Ticket Classes affected Survival Rates on the RMS Titanic?" link="https://github.com/Akshat-Kalra/STAT_201_PROJECT" skills={<strong>R | Jupyter Notebook | EDA | Inferential Statistics</strong>}/>
         </div>

@@ -9,28 +9,23 @@ import pythonIcon from '../../assets/pythonIcon.svg'
 import cppIcon from '../../assets/cppIcon.svg'
 import gitIcon from '../../assets/git-icon.svg'
 import gitHubIcon from '../../assets/github-light.svg'
+import mysql from '../../assets/mysql.svg'
+import figmaIcon from '../../assets/figma.svg'
+import tailwindIcon from '../../assets/tailwind.svg'
 
 const frontendSkills = [
     { name: 'ReactJS', svg: reactIcon},
     { name: 'HTML', svg: HTMLIcon},
     { name: 'CSS', svg: cssIcon},
-    { name: 'C++', svg: cppIcon},
-    { name: 'Java', svg: javaIcon},
-    { name: 'Javascript', svg: jsIcon},
-    { name: 'Python', svg: pythonIcon},
-    { name: 'Git', svg: gitIcon},
-    { name: 'GitHub', svg: gitHubIcon}
+    { name: 'Javascript', svg: jsIcon}, 
+    {name : 'Figma', svg: figmaIcon},
+    {name : 'TailwindCSS', svg: tailwindIcon}
   ];
   
   const backendSkills = [
     { name: 'Node.js', svg: reactIcon},
     { name: 'Express.js', svg: HTMLIcon},
-    { name: 'C++', svg: cppIcon},
-    { name: 'Java', svg: javaIcon},
-    { name: 'Javascript', svg: jsIcon},
-    { name: 'Python', svg: pythonIcon},
-    { name: 'Git', svg: gitIcon},
-    { name: 'GitHub', svg: gitHubIcon}
+    { name: 'MySQL', svg: mysql}
   ];
   
   const languageSkills = [
