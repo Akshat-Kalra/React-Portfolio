@@ -64,6 +64,9 @@ p {
 }
 
 @media (width >= 800px){
+  #root {
+    gap: 80px;
+  }
 
   h1 {
     font-size: 40px;
@@ -86,7 +89,7 @@ p {
 
 @media (width >= 1400px){
   #root {
-    gap: 0px;
+    gap: 200px;
   }
 
   h1 {
