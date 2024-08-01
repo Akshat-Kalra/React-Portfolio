@@ -1,7 +1,7 @@
 .container {
     text-align: center;
     padding: 40px; /* Increased padding for better spacing */
-    padding-top: 60px;
+    padding-top: 80px;
     background-color: var(--background-color);
     border-radius: 10px; /* Rounded corners for smoother look */
 }
