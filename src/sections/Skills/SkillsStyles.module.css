@@ -1,32 +1,32 @@
 .container {
     text-align: center;
-    padding: 40px; /* Increased padding for better spacing */
+    padding: 30px;
     padding-top: 80px;
     background-color: var(--background-color);
-    border-radius: 10px; /* Rounded corners for smoother look */
+    border-radius: 10px; 
 }
 
 .technologyContainer {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Space between different skill categories */
+    gap: 40px;
 }
 
 
 .skillContainer {
     display: flex;
-    flex-direction: row; /* Default to row layout for larger screens */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Increased space between items */
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
     border-radius: 20px;
     border: 2px solid #ccc;
-    background-color: var(--background-color); /* White background for skill container */
-    margin: 20px auto; /* Center the container with margin */
-    padding: 30px; /* Increased padding */
-    width: 90%; /* Adjust width to fit smaller screens */
-    max-width: 1200px; /* Increased max width for larger screens */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    background-color: var(--background-color);
+    margin: 20px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .skillCard {
