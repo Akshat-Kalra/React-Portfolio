@@ -19,7 +19,6 @@
 }
 
 body {
-
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -66,7 +65,7 @@ p {
 
 @media (width >= 800px){
   #root {
-    gap: 100px;
+    gap: 80px;
   }
 
   h1 {
