@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     text-align: center;
     height: 100dvh;
@@ -49,12 +50,15 @@
 
     button:active {
         transform: translateY(2px);
-        boxbox-shadow: 0 2px 2px rgba(0,0,0,0.25)
+        box-shadow: 0 2px 2px rgba(0,0,0,0.25)
     }
 }
 
 .colorModeContainer {
+    padding-top: 50px;
     position: relative;
+    width: 30rem;
+    margin-right: 20px;
 }
 
 .colorMode {
