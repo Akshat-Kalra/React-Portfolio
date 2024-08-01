@@ -13,6 +13,8 @@ import gitHubIcon from '../../assets/github-light.svg'
 import mysql from '../../assets/mysql.svg'
 import figmaIcon from '../../assets/figma.svg'
 import tailwindIcon from '../../assets/tailwind.svg'
+import node from '../../assets/node.svg'
+import expressJS from '../../assets/expressJS.svg'
 
 const frontendSkills = [
     { name: 'ReactJS', svg: reactIcon},
@@ -24,8 +26,8 @@ const frontendSkills = [
   ];
   
   const backendSkills = [
-    { name: 'Node.js', svg: reactIcon},
-    { name: 'Express.js', svg: HTMLIcon},
+    { name: 'Node.js', svg: node},
+    { name: 'Express.js', svg: expressJS},
     { name: 'MySQL', svg: mysql}
   ];
   
