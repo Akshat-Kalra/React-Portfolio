@@ -64,9 +64,6 @@ p {
 }
 
 @media (width >= 800px){
-  #root {
-    
-  }
 
   h1 {
     font-size: 40px;

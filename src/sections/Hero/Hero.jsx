@@ -10,7 +10,6 @@ import linkedInLight from '../../assets/linkedin-light.svg'
 import linkedInDark from '../../assets/linkedin-dark.svg'
 import CV from  '../../assets/cv.pdf'
 import { useTheme } from '../../common/ThemeContext'
-import Navbar from '../Navbar/Navbar'
 
 function Hero() {
     const {theme, toggleTheme} = useTheme();
