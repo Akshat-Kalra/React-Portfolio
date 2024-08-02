@@ -1,9 +1,9 @@
-import { Link } from 'react-scroll';
-import './Navbar.css';
+import { Link } from "react-scroll";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar" >
+    <nav className="navbar">
       <ul>
         <li>
           <Link to="nav" smooth={true} duration={500}>
