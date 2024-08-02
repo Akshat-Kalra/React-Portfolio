@@ -1,7 +1,7 @@
 .navbar {
   font-family: 'Roboto Mono';
   top: 0;
-  background-color: var(--text-color);
+  background-color: #222;
   padding: 1rem;
   z-index: 1000;
   width: 100%;
@@ -9,6 +9,7 @@
   margin: 0 auto;
   width: fit-content;
   border-radius: 50px;
+  border: 2px solid #ccc;
 }
 
 .navbar ul {
@@ -25,7 +26,7 @@
 
 
 .navbar a {
-  color: var(--background-color);
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -33,4 +34,5 @@
 .navbar a:hover {
   text-decoration: underline;
   cursor: pointer;
+  
 }
