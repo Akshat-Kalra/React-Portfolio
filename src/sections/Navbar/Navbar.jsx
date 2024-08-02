@@ -1,13 +1,12 @@
-
 import { Link } from 'react-scroll';
 import './Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className="navbar" >
       <ul>
         <li>
-          <Link to="hero" smooth={true} duration={500}>
+          <Link to="nav" smooth={true} duration={500}>
             About
           </Link>
         </li>

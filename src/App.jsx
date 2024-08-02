@@ -8,7 +8,9 @@ import Navbar from './sections/Navbar/Navbar'
 function App() {
 
   return (
-    <>
+    <div id="nav">
+      <Navbar />
+    <div className="content">
     <div id="hero">
         <Hero />
       </div>
@@ -21,7 +23,8 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
-    </>
+    </div>
+    </div>
   )
 }
 

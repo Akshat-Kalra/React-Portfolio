@@ -1,12 +1,14 @@
 .navbar {
   font-family: 'Roboto Mono';
   top: 0;
-  margin: 0 auto;
-  border-radius: 50px;
   background-color: var(--text-color);
   padding: 1rem;
   z-index: 1000;
+  width: 100%;
   position: sticky;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 50px;
 }
 
 .navbar ul {
@@ -14,17 +16,18 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .navbar li {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
+
 
 .navbar a {
   color: var(--background-color);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .navbar a:hover {
