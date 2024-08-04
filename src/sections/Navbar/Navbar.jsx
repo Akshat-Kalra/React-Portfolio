@@ -1,9 +1,29 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar() {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar);
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${show ? 'active' : 'hidden'}`}>
       <ul>
         <li>
           <Link to="nav" smooth={true} duration={500}>
