@@ -1,4 +1,6 @@
 .container {
+    font-family: 'Roboto Mono';
+    font-size: small;
     text-align: center;
     padding: 30px;
     padding-top: 80px;
