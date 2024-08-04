@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import "./Navbar.css";
-
+ 
 function Navbar() {
   return (
     <nav className="navbar">
