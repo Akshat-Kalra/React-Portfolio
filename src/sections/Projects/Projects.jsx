@@ -5,6 +5,8 @@ import titanic from "../../assets/titanic.png";
 import cat from "../../assets/cat.png";
 import website from "../../assets/website.png";
 import fitLift from "../../assets/fitlift.png";
+import sorted from "../../assets/algo-viz.png";
+import unsorted from "../../assets/algo-viz-unsorted.png";
 
 function Projects() {
   return (
@@ -23,7 +25,14 @@ function Projects() {
           name="This Website :)"
           description="ReactJS-powered portfolio website showcasing projects and skills. Utilizing react features such as hooks, state management, reusable components. "
           link="https://akshatkalra.com"
-          skills={<strong>ReactJS | Javascript | HTML | CSS </strong>}
+          skills={<strong>ReactJS | HTML | CSS </strong>}
+        />
+        <Project
+          img={sorted}
+          name="Sorting Algorithm Visualizer"
+          description="Sorting Algorithm Visualizer | Customizable array length and speed | Supports Insertion, Selection, and Bubble Sort"
+          link="https://react-sorting-visualizer-eight.vercel.app/"
+          skills={<strong>ReactJS | HTML | CSS</strong>}
         />
         <Project
           img={cat}
