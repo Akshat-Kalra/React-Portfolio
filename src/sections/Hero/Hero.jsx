@@ -1,5 +1,6 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.png";
+import Img1 from "../../assets/website-photo.png";
+import Img2 from "../../assets/website-photo2.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/twitter-light.svg";
@@ -11,7 +12,9 @@ import linkedInDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
+
 function Hero() {
+  
   const { theme, toggleTheme } = useTheme();
   const themeIcon = theme === "light" ? sun : moon;
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
@@ -21,7 +24,9 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        <img className={styles.hero} src={heroImg} alt="Profile Picture" />
+        <img className={styles.hero} src={
+          theme === "light" ? Img1 : Img2
+        } alt="Profile Picture" />
         <img
           src={themeIcon}
           className={styles.colorMode}
