@@ -2,6 +2,7 @@ import "./App.css";
 import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
+import Experience from "./sections/Experience/Experience";
 import Contact from "./sections/Contact/Contact";
 import Navbar from "./sections/Navbar/Navbar";
 import { Analytics } from "@vercel/analytics/react"
@@ -14,6 +15,9 @@ function App() {
       <div className="content">
         <div id="hero">
           <Hero />
+        </div>
+        <div id="experience">
+          <Experience />
         </div>
         <div id="projects">
           <Projects />
