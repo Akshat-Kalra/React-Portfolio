@@ -4,6 +4,7 @@
   padding: 60px 30px;
   background-color: var(--background-color);
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* Theme overrides on the container. These variables will cascade to children. */
