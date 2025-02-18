@@ -94,3 +94,13 @@
   font-size: 1rem;
   color: var(--text-color);
 }
+
+/* ExperienceStyles.module.css */
+
+/* ...existing styles... */
+
+.logo {
+  max-width: 80px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
