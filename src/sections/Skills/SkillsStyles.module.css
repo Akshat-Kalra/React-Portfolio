@@ -70,7 +70,7 @@
 h1 {
     margin-bottom: 30px; /* Space below the title */
     font-size: 2.5rem; /* Larger font size for the main title */
-    color: #333; /* Darker color for better readability */
+    /* color: #fff; Darker color for better readability */
 }
 
 h3 {
