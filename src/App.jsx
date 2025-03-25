@@ -6,7 +6,7 @@ import Experience from "./sections/Experience/Experience";
 import Contact from "./sections/Contact/Contact";
 import Navbar from "./sections/Navbar/Navbar";
 import { Analytics } from "@vercel/analytics/react"
-
+ 
 function App() {
   return (
     <div id="nav">
