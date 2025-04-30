@@ -55,7 +55,7 @@ function Hero() {
             <img src={linkedInIcon} alt="Twitter Icon" />
           </a>
         </span>
-        <a href={CV} download>
+        <a href="/resume.pdf">
           <button className="hover">Resume</button>
         </a>
       </div>
