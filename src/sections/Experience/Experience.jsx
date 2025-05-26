@@ -41,6 +41,8 @@ function Experience() {
           title="Undergraduate Teaching Assistant"
           company="University of British Columbia, Vancouver"
           location="Vancouver, BC"
+          logo={ubclogo}
+          logoClass={styles.logoUBC}
           timeframe="Sep 2023 – Present"
           details={[
             "Current Teaching Assistant for CPSC 121 - Models of Computation [Discrete Mathematics], focusing on proofs, combinations logic circuits, functions, sequential circuits and finite state machines",
