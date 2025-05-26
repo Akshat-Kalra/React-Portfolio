@@ -1,7 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useTheme } from "../../common/ThemeContext";
 import styles from "./ExperienceStyles.module.css";
 import companyLogo from "../../assets/subbots.png"; // Adjust the path as needed
+import ubclogo from "../../assets/ubc-logo.png";
 
 function Experience() {
   const { theme } = useTheme();
@@ -15,7 +17,17 @@ function Experience() {
       <h1 className="sectionTitle">Experience</h1>
       <div className={styles.cardsContainer}>
         <ExperienceCard
-          title="Software and Firmware Co-Lead"
+          title="Software Developer Co-op"
+          company="UBC Faculty of Forestry"
+          logo={ubclogo} // Passing the logo prop
+          logoClass={styles.logoUBC}
+          location="Vancouver, BC"
+          timeframe="May 2025 – Present"
+          details={[
+          ]}
+        />
+        <ExperienceCard
+          title="Software and Firmware Developer"
           company="UBC Subbots [Engineering Design Team]"
           logo={companyLogo} // Passing the logo prop
           location="Vancouver, BC"
@@ -41,8 +53,7 @@ function Experience() {
     </section>
   );
 }
-
-function ExperienceCard({ title, company, logo, location, timeframe, details }) {
+function ExperienceCard({ title, company, logo, logoClass, location, timeframe, details }) {
   const { theme } = useTheme();
 
   return (
@@ -56,7 +67,7 @@ function ExperienceCard({ title, company, logo, location, timeframe, details }) 
           <img
             src={logo}
             alt={`${company} logo`}
-            className={styles.logo} // Applies your new CSS styling
+            className={logoClass ? logoClass : styles.logo}
           />
         )}
         <h3>{title}</h3>
@@ -75,5 +86,16 @@ function ExperienceCard({ title, company, logo, location, timeframe, details }) 
     </div>
   );
 }
+
+ExperienceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  logo: PropTypes.string,
+  logoClass: PropTypes.string,
+  location: PropTypes.string,
+  timeframe: PropTypes.string,
+  details: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
 
 export default Experience;
