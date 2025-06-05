@@ -24,6 +24,7 @@ function Experience() {
           location="Vancouver, BC"
           timeframe="May 2025 – Present"
           details={[
+            "Building HelpMe :)"
           ]}
         />
         <ExperienceCard
