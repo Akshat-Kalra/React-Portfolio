@@ -41,6 +41,7 @@ function Hero() {
           Third Year CS and Statistics @ UBC
         </h2>
         {/* <h3>{"Web Dev, Data Science, Stats and more..."}</h3> */}
+        <h4>{"akalra06 [at] student [dot] ubc [dot] ca"}</h4>
         <h4>Helpful Links:</h4>
         <span>
           <a href="https://github.com/Akshat-Kalra" target="_blank">
