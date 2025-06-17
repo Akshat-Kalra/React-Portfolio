@@ -9,7 +9,6 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedInLight from "../../assets/linkedin-light.svg";
 import linkedInDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 
@@ -54,7 +53,7 @@ function Hero() {
             <img src={linkedInIcon} alt="Twitter Icon" />
           </a>
         </span>
-        <a href="/resume.pdf">
+        <a href="/resume-2025.pdf">
           <button className="hover">Resume</button>
         </a>
       </div>
